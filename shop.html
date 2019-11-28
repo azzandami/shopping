@@ -22,8 +22,13 @@
                     </div>
                     <hr class="small-line" />
                     <img src="./asset/images/shoppingcart.png" height="200px" width="200px" />
-                    <button type="button" class="btn btn-light">
-                        View Shopping Cart
+                    <button
+                        onclick="changeView()"
+                        id="changeTxt"
+                        type="button"
+                        class="btn btn-light"
+                    >    
+                    view shopping cart
                     </button>
                     <hr class="small-line" />
                 </div>
@@ -35,11 +40,11 @@
             placeholder="Search" aria-label="search" />
 
             <span class="fas fa-search"></span>
-            <hr>
+            <hr/>
 
-
+        <div id="viewShoppingCart">
         <div class="empty-top"></div>
-        <div class="items">
+        <div class="items" id="items">
             <br>
             <div class="item">
             <p> Item name:T-Shirt <span class="quantity"><label>Quantity:</label><input type="text"></span></p>
@@ -59,10 +64,10 @@
             <button class="add-cart animated bounce infinite">Add to cart</button>
             </div>
             </div>
-
-
+        </div>
+            <div id="selectShoppingCart">
             <div class="empty-top"></div>
-            <div class="items">
+            <div class="items" id="selectItemsId">
                 <table class="table">
                     <thead>
                         <tr>
@@ -92,11 +97,12 @@
             </div>
         </div>
     </div>
+</div>
     
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <script src="./asset/js/shop.js" async defer></script>
     </body>
 </html>
